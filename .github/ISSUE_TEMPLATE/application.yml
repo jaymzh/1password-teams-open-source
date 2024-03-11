@@ -1,0 +1,155 @@
+name: Application
+description: Apply to 1Password for Open Source
+title: "Application for [project name]"
+labels: ["application"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Apply to 1Password for Open Source
+
+        Before you continue, please [review the requirements](https://github.com/1Password/1password-teams-open-source#-requirements) to ensure you are eligible.
+
+        Once you submit your application our friendly 1Password Bot will perform an initial review, followed by a human who will do a final pass. Upon approval we'll applying a non-expiring promotion to your account, and add your team's details to this repository. Learn more about [membership details.](https://github.com/1Password/1password-teams-open-source#-membership-details)
+
+        If you're not sure if you're eligible, or have any questions before applying, please contact [opensource@1password.com](mailto:opensource@1password.com).
+
+        ---
+
+  - type: input
+    attributes:
+      label: Account URL
+      description: |
+        The full URL for your 1Password Teams account. Don't have an account? [Start a 14 day trial.](https://start.1password.com/signup/?t=B)
+      placeholder: example.1password.com
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Non-commercial confirmation
+      description: The 1Password account joining this program must not be associated with commercial activity.
+      options:
+        - label: No, this account will not be used for commercial activity
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📦 Your project
+
+        Let's see what you're working on.
+
+  - type: input
+    attributes:
+      label: Project name
+      description: The name of your open source project.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Short description
+      description: A short description of your project, team, or event. Try to keep it to 50 words or less. Formatting will be stripped, and emojis are not allowed.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Number of core contributors
+      description: This may change over time, but will help us understand the initial size of team for this account.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Homepage URL
+      description: |
+        Where can we learn more about your project, team, or event? This could be the official website, a repository, a profile, or an event page.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Repository URL
+      description: Can be left blank if the same as the Homepage URL. If part of a team, pick your favourite repo!
+
+  - type: input
+    attributes:
+      label: License type
+      description: For example, MIT, BSD, MPL, GPL, etc.
+
+  - type: input
+    attributes:
+      label: License URL
+      description: The location of the permissive license for your software. This would typically be in your project repository or another easily-discoverable location.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Event application
+      description: Is this application for an open source meetup, event, or conference?
+      options:
+        - label: Yes, this application is for an event
+
+  - type: checkboxes
+    attributes:
+      label: Age confirmation
+      description: Projects need to be at least 30 days old in order to be eligible for a free Teams account.
+      options:
+        - label: Yes, this project is at least 30 days old
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 👨‍💻 About you
+
+        Tell us a little about yourself!
+
+  - type: input
+    attributes:
+      label: Name
+      placeholder: Wendy Appleseed
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Email
+      description: This email should be associated with one of the 1Password account owners. If your project does not have a email that you are able to provide publicly, please email [opensource@1password.com](mailto:opensource@1password.com) with your application information.
+      placeholder: wendyappleseed@myproject.com
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Project role
+      description: Choose an option that best describes your role within this project.
+      options:
+        - Founder or Owner
+        - Team Member or Employee
+        - Project Lead
+        - Core Maintainer
+        - Developer
+        - Organizer or Admin
+        - Program Manager
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Profile or website
+      description: Where can we find more about you?
+
+  - type: checkboxes
+    attributes:
+      label: Can we contact you?
+      description: _Optional._ We'd love to be in touch to learn how you're using 1Password. Are you be open to someone from our team reaching out?
+      options:
+        - label: Yes, I'm open
+
+  - type: textarea
+    attributes:
+      label: Additional comments
+      description: Anything else you'd like to add?
